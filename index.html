@@ -237,14 +237,18 @@
       <script>
         (function(d,t) {
           var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src="https://test.ca.one-stop-talk.sbx.gcp.trchq.com/embed.js"
+          g.src="https://test.ca.one-stop-talk.sbx.gcp.trchq.com//embed.js"
           s.parentNode.insertBefore(g,s);
           g.onload=function(){
             new window.VirtualCareMessengerEncrypted({
-              domain: 'https://test.ca.one-stop-talk.sbx.gcp.trchq.com',
+              domain: 'https://test.ca.one-stop-talk.sbx.gcp.trchq.com/',
               ws:  'wss://test.ca.one-stop-talk.sbx.gcp.trchq.com/cable',
-              app_id: "j92ymcMswmQ9QHUzFL4NXoHz",
-              data: "YOUR_ENCRYPTED_JWE_DATA",
+              app_id: "XnA6d2mEejaov78UETAzM5uj",
+              data: {
+                email: "user@email.com",
+                identifier_key: "INSERT_HMAC_VALUE_HERE",
+                properties: { }
+              },
               lang: "USER_LANG_OR_DEFAULTS_TO_BROWSER_LANG" 
             })
           }
